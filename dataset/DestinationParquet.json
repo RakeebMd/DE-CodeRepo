@@ -1,6 +1,10 @@
 {
 	"name": "DestinationParquet",
 	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DE_ADLS_LS",
+			"type": "LinkedServiceReference"
+		},
 		"parameters": {
 			"schemaName": {
 				"type": "string"

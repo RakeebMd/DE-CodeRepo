@@ -1,6 +1,10 @@
 {
 	"name": "InputFolderLS",
 	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DE_ADLS_LS",
+			"type": "LinkedServiceReference"
+		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
