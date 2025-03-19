@@ -2,9 +2,9 @@
 	"name": "DE-demo-df",
 	"properties": {
 		"globalConfigurations": {
-			"factoryStagingLSReferenceName": "AzureDataLakeStorageLS",
-			"factoryStagingLSType": "LinkedServiceReference",
-			"factoryStagingFolderPath": "de-bronze"
+			"factoryStagingLSReferenceName": "",
+			"factoryStagingLSType": "",
+			"factoryStagingFolderPath": ""
 		}
 	},
 	"location": "eastus",
