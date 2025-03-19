@@ -1,0 +1,25 @@
+{
+	"name": "BlobAddedTrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyDataFromOnPrem",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/de-bronze/blobs/",
+			"blobPathEndsWith": ".parquet",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/8a7a6b26-f0a2-40d7-9f03-234caf19b30c/resourceGroups/DE_admin/providers/Microsoft.Storage/storageAccounts/dedlsg",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

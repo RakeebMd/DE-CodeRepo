@@ -1,0 +1,40 @@
+{
+	"name": "InputFolderLS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorageLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "oltp",
+				"fileSystem": "de-bronze"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "campaign_product_subcategory_id",
+				"type": "INT32"
+			},
+			{
+				"name": "campaign_id",
+				"type": "INT32"
+			},
+			{
+				"name": "subcategory_id",
+				"type": "INT32"
+			},
+			{
+				"name": "discount",
+				"type": "DECIMAL",
+				"precision": 3,
+				"scale": 2
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
