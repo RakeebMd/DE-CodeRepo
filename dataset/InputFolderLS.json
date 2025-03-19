@@ -1,10 +1,6 @@
 {
 	"name": "InputFolderLS",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorageLS",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {

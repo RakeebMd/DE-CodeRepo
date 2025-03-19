@@ -1,10 +1,6 @@
 {
 	"name": "DestinationParquet",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorageLS",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"schemaName": {
 				"type": "string"
