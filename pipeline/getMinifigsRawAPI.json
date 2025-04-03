@@ -72,7 +72,13 @@
 				"outputs": [
 					{
 						"referenceName": "Minifigs_JSON_DS",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"fileName": {
+								"value": "@pipeline().parameters.URL_Param",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			},

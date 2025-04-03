@@ -5,14 +5,22 @@
 			"referenceName": "ADLS_G2_LS",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"fileName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "minifigsAPI.json",
+				"fileName": {
+					"value": "@dataset().fileName",
+					"type": "Expression"
+				},
 				"folderPath": {
-					"value": "@concat('Minifigs/API/', \n    formatDateTime(utcNow(), 'yyyy'), '/',\n    formatDateTime(utcNow(), 'MM'), '/', \n    formatDateTime(utcNow(), 'dd'))",
+					"value": "@concat('Rebrickable/API/', \n    formatDateTime(utcNow(), 'yyyy'), '/',\n    formatDateTime(utcNow(), 'MM'), '/', \n    formatDateTime(utcNow(), 'dd'))",
 					"type": "Expression"
 				},
 				"fileSystem": "de-bronze"
