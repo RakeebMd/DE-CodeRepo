@@ -2,7 +2,7 @@
 	"name": "InputFolderLS",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "DE_ADLS_LS",
+			"referenceName": "ADLS_G2_LS",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
