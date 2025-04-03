@@ -8,7 +8,7 @@
 		"annotations": [],
 		"type": "RestResource",
 		"typeProperties": {
-			"relativeUrl": "/api/v3/lego/minifigs/"
+			"relativeUrl": "api/v3/lego/minifigs/"
 		},
 		"schema": []
 	}

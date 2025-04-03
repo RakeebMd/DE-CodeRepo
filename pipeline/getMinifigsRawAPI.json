@@ -29,7 +29,7 @@
 						"requestMethod": "GET",
 						"additionalHeaders": {
 							"Authorization": {
-								"value": "@concat('key',activity('GetRebrickableAPI_keyFromKV').output.value)",
+								"value": "@concat('key ',activity('GetRebrickableAPI_keyFromKV').output.value)",
 								"type": "Expression"
 							}
 						},
