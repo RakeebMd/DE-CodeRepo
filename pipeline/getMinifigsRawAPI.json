@@ -34,7 +34,10 @@
 					"source": {
 						"type": "RestSource",
 						"httpRequestTimeout": "00:01:40",
-						"requestInterval": "00.00:00:01.200",
+						"requestInterval": {
+							"value": "@{pipeline().parameters.ThrottlingTime}",
+							"type": "Expression"
+						},
 						"requestMethod": "GET",
 						"additionalHeaders": {
 							"Authorization": {
@@ -43,7 +46,10 @@
 							}
 						},
 						"paginationRules": {
-							"AbsoluteUrl": "$.next"
+							"AbsoluteUrl": {
+								"value": "@pipeline().parameters.PaginationKey",
+								"type": "Expression"
+							}
 						}
 					},
 					"sink": {
@@ -107,6 +113,14 @@
 		"parameters": {
 			"URL_Param": {
 				"type": "string"
+			},
+			"ThrottlingTime": {
+				"type": "int",
+				"defaultValue": 1200
+			},
+			"PaginationKey": {
+				"type": "string",
+				"defaultValue": "next"
 			}
 		},
 		"annotations": []
