@@ -46,10 +46,7 @@
 							}
 						},
 						"paginationRules": {
-							"AbsoluteUrl": {
-								"value": "@pipeline().parameters.PaginationKey",
-								"type": "Expression"
-							}
+							"AbsoluteUrl": "$.next"
 						}
 					},
 					"sink": {
@@ -117,10 +114,6 @@
 			"ThrottlingTime": {
 				"type": "int",
 				"defaultValue": 1200
-			},
-			"PaginationKey": {
-				"type": "string",
-				"defaultValue": "next"
 			}
 		},
 		"annotations": []
