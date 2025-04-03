@@ -20,7 +20,7 @@
 					"type": "Expression"
 				},
 				"folderPath": {
-					"value": "@concat('Rebrickable/API/', \n    formatDateTime(utcNow(), 'yyyy'), '/',\n    formatDateTime(utcNow(), 'MM'), '/', \n    formatDateTime(utcNow(), 'dd'))",
+					"value": "@concat('Rebrickable/API/', \n    dataset().fileName, '/',\n    formatDateTime(utcNow(), 'yyyy'), '/',\n    formatDateTime(utcNow(), 'MM'), '/', \n    formatDateTime(utcNow(), 'dd'))",
 					"type": "Expression"
 				},
 				"fileSystem": "de-bronze"
