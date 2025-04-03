@@ -5,10 +5,18 @@
 			"referenceName": "Rebrickable_REST_API_LS",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"URL_Name": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "RestResource",
 		"typeProperties": {
-			"relativeUrl": "api/v3/lego/minifigs/"
+			"relativeUrl": {
+				"value": "@concat('api/v3/lego/',dataset().URL_Name)",
+				"type": "Expression"
+			}
 		},
 		"schema": []
 	}

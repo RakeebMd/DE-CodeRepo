@@ -34,7 +34,7 @@
 					"source": {
 						"type": "RestSource",
 						"httpRequestTimeout": "00:01:40",
-						"requestInterval": "00.00:00:01.000",
+						"requestInterval": "00.00:00:01.200",
 						"requestMethod": "GET",
 						"additionalHeaders": {
 							"Authorization": {
@@ -60,7 +60,13 @@
 				"inputs": [
 					{
 						"referenceName": "Rebrickable_Minifigs_DS",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"URL_Name": {
+								"value": "@pipeline().parameters.URL_Param",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
@@ -92,6 +98,11 @@
 				}
 			}
 		],
+		"parameters": {
+			"URL_Param": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
