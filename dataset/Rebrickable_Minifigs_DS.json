@@ -1,0 +1,23 @@
+{
+	"name": "Rebrickable_Minifigs_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Rebrickable_REST_API_LS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"URL_Name": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@concat('api/v3/lego/',dataset().URL_Name)",
+				"type": "Expression"
+			}
+		},
+		"schema": []
+	}
+}
