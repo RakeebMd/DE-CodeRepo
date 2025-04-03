@@ -1,5 +1,5 @@
 {
-	"name": "DE_ADLS_LS",
+	"name": "ADLS_G2_LS",
 	"properties": {
 		"annotations": [],
 		"type": "AzureBlobFS",
