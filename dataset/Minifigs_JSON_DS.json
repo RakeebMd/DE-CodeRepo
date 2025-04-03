@@ -12,7 +12,7 @@
 				"type": "AzureBlobFSLocation",
 				"fileName": "minifigsAPI.json",
 				"folderPath": {
-					"value": "@concat('Minifigs/API/', \r\n    formatDateTime(utcnow(), 'yyyy'), '/',\r\n    formatDateTime(utcnow(), 'MM'), '/', \r\n    formatDateTime(utcnow(), 'dd'))\r\n",
+					"value": "@concat('Minifigs/API/', \n    formatDateTime(utcNow(), 'yyyy'), '/',\n    formatDateTime(utcNow(), 'MM'), '/', \n    formatDateTime(utcNow(), 'dd'))",
 					"type": "Expression"
 				},
 				"fileSystem": "de-bronze"
