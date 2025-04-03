@@ -1,0 +1,56 @@
+{
+	"name": "RAW_CSV_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DE_ADLS_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "RebrickableRawCSVs",
+				"fileSystem": "de-bronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "name",
+				"type": "String"
+			},
+			{
+				"name": "rgb",
+				"type": "String"
+			},
+			{
+				"name": "is_trans",
+				"type": "String"
+			},
+			{
+				"name": "num_parts",
+				"type": "String"
+			},
+			{
+				"name": "num_sets",
+				"type": "String"
+			},
+			{
+				"name": "y1",
+				"type": "String"
+			},
+			{
+				"name": "y2",
+				"type": "String"
+			}
+		]
+	}
+}
